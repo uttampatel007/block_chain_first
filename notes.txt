@@ -1,0 +1,2 @@
+Most important concept in blockchain is proof of work.
+Proof of work is nothing but a set of desired digits that needs to be in maths logic
