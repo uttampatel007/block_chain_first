@@ -1,0 +1,26 @@
+>>> import hashlib
+>>> 
+>>> message = "Python is great"
+>>> h1 = hashlib.sha256(message.encode())
+>>> 
+>>> h1
+<sha256 HASH object @ 0x7fdc38e7ca70>
+>>> 
+>>> message.encode()
+b'Python is great'
+>>> 
+>>> h1.hexdigest()
+'a40cf9cca5eaa9d6e3e25d78a004099a89a075da5facee107a3cd5ae1142ab97'
+>>> 
+>>> message2 = "Python is great"
+>>> 
+>>> h2 = hashlib.sha256(message2.encode())
+>>> 
+>>> h2.hexdigest()
+'a40cf9cca5eaa9d6e3e25d78a004099a89a075da5facee107a3cd5ae1142ab97'
+
+
+>>> message2 = "Python is great!"
+>>> h2 = hashlib.sha256(message2.encode())
+>>> h2.hexdigest()
+'38efd8b8136cae3b50cfbbcdcb04841184ce4be727321101746c232f1e2d8ba5'
